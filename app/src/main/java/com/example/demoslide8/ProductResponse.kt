@@ -18,3 +18,11 @@ fun ProductResponse.toProduct(): Product{
         image = this.image
     )
 }
+fun Product.toProduct(): Product{
+    return Product(
+        id = this.id,
+        name = this.name,
+        price = this.price,
+        image = this.image
+    )
+}
